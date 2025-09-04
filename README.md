@@ -29,7 +29,7 @@ AWS UPDATE KUBECONFIG
     aws eks update-kubeconfig --region <region> --name <cluster-name>
 
 MAKE THE STORAGE CLASS AS DEFAULT
-    kubectl patch storageclass gp2 -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}
+    kubectl patch storageclass gp2 -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 
 
 Step-1: Create an OIDC provider.
