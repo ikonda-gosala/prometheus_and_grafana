@@ -96,5 +96,12 @@ helm install grafana grafana/grafana \
 Step-6:
 Default the grafana service will be type of node-port, now just add the inbound traffic to the port of the grafana in the security groups.
 
+Step-7: Install Argocd
+
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+--> same chenge the service to node-port or load-balancer , then you can access the argocd server.
+
 
 
